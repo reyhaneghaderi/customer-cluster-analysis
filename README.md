@@ -24,5 +24,27 @@ This project applies unsupervised machine learning to segment customers into mea
    - Clustering: Optimal cluster selection (elbow & silhouette).
 
    - Evaluation: Segment profiles and intra/inter-cluster distances.
+   - Visualization: 2D projections, boxplots of cluster characteristics.
 
-Visualization: 2D projections, boxplots of cluster characteristics. 
+# Results (from my analysis)
+
+  - Best cluster number: 3
+  - Silhouette Score: ~0.54
+  - Cluster breakdown:
+  - Cluster 0 (≈ 40% of customers):
+      High Recency (avg ~90 days since last purchase)
+      Low Frequency (avg ~2 purchases)
+      Low Monetary (avg ~$200 spent)
+
+➝ Churn-risk, low-value customers
+ - Cluster 1 (≈ 30% of customers):
+    Low Recency (avg ~20 days)
+    High Frequency (avg ~10 purchases)
+    High Monetary (avg ~$1,200 spent)
+➝ Loyal, high-value customers
+  - Cluster 2 (≈ 30% of customers):
+    Medium Recency (avg ~45 days)
+    Medium Frequency (avg ~5 purchases)
+    Medium Monetary (avg ~$600 spent)
+➝ Potential growth customers
+ 
